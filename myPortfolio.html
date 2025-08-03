@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Kirira Ndiritu - Portfolio</title>
+    <link rel="stylesheet" href="myPortlfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typewriter-effect/2.18.0/core.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-img">
+                <img src="kirira.jpg" alt="Paul Kirira Ndiritu">
+            </div>
+            <h1>Hello, I'm Paul Kirira Ndiritu</h1>
+            <p class="typing">Software Engineer | Data Analyst | Web Developer</p>
+            <div class="cta-container">
+                <a href="#projects" class="cta-btn">Get a project</a>
+                <a href="Paul_Kirira_CV.pdf" class="cta-btn" target="_blank">Download CV</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I’m a passionate software engineer and data analyst, specializing in web applications, data analysis, and solutions that drive business growth. With a solid background in statistics and technology, I focus on transforming data into impactful insights. My expertise in Python, SQL, JavaScript, and data visualization helps me solve complex problems and deliver innovative solutions.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h3>120+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat">
+                    <h3>95%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="stat">
+                    <h3>10+</h3>
+                    <p>Years of Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <i class="fab fa-html5" title="Click for more details" onclick="showSkillInfo('html')"></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt" title="Click for more details" onclick="showSkillInfo('css')"></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js" title="Click for more details" onclick="showSkillInfo('js')"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-python" title="Click for more details" onclick="showSkillInfo('python')"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-r-project" title="Click for more details" onclick="showSkillInfo('r')"></i>
+                    <h3>R Programming</h3>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database" title="Click for more details" onclick="showSkillInfo('sql')"></i>
+                    <h3>SQL</h3>
+                </div>
+            </div>
+
+            <!-- More information section -->
+            <div id="skill-info" class="skill-info">
+                <p id="html-info" style="display: none;">I use HTML extensively for building the structure of web pages. With HTML, I ensure accessibility, user-friendly navigation, and clear layout, particularly when integrating interactive forms and displaying data in web applications.</p>
+                <p id="css-info" style="display: none;">CSS allows me to enhance the aesthetic of my web applications. I use it to create responsive, visually appealing layouts and custom styling that aligns with brand guidelines. From simple static sites to complex dynamic layouts, CSS is integral to my front-end development process.</p>
+                <p id="js-info" style="display: none;">JavaScript is my go-to language for creating interactive web applications. I use it to add functionality like dynamic content updates, form validation, and AJAX requests to enhance user experiences in real-time. My experience spans both vanilla JavaScript and frameworks like React.</p>
+                <p id="python-info" style="display: none;">I use Python for a wide range of tasks, from data analysis to back-end development. In data analysis, I utilize libraries like Pandas and NumPy for data manipulation and Matplotlib/Seaborn for visualization. I also employ Python in web development with Flask and Django to build server-side logic.</p>
+                <p id="r-info" style="display: none;">I leverage R for statistical analysis, especially in my data analytics projects. It’s ideal for handling complex datasets and performing statistical modeling. I use R for hypothesis testing, regression analysis, and data visualization, especially in research-related projects.</p>
+                <p id="sql-info" style="display: none;">SQL is central to my work when managing large datasets. I use it to write complex queries for extracting and analyzing data from relational databases. I have extensive experience with SQL in tools like PostgreSQL, MySQL, and SQL Server, ensuring data integrity and creating efficient queries for business insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 1: A Multicenter Cross-Sectional Study on Factors Associated with Caregiving Appraisal in Pediatric Acute Leukemia Caregivers</h3>
+                    <p>This study focused on analyzing the psychological impact of caregiving for children with pediatric acute leukemia. I performed data analysis using **SPSS** and **R** to identify key factors affecting caregivers' well-being. My role involved applying **regression analysis**, **correlation analysis**, and **data visualization** to uncover significant patterns and insights from the data, which were essential for understanding the predictors of caregiver distress and satisfaction.</p>
+                    <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0324589" target="_blank" class="cta-btn">Click to View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2: E-Commerce Platform</h3>
+                    <p>Developed a robust e-commerce platform with features like inventory management, payment gateway integration, and user-friendly interfaces. The project aimed to create a scalable and secure online store.</p>
+                    <!-- Removed GitHub link for Project 2 as requested -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to discuss a potential collaboration, project, or just want to connect, feel free to reach out!</p>
+            <div class="contact-info">
+                <a href="https://x.com/Don_Kirira" class="contact-icon" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://wa.me/0741105701" class="contact-icon" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://www.linkedin.com/in/paulkirira" class="contact-icon" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+            <form action="mailto:nkirira@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Please include details about your inquiry or project request. Feel free to share as much as you'd like." required></textarea>
+                </div>
+                <button type="submit" class="cta-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Paul Kirira Ndiritu | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        const app = document.querySelector(".typing");
+        const typewriter = new Typewriter(app, { loop: true, delay: 75 });
+        typewriter
+            .typeString("Software Engineer | Data Analyst | Web Developer")
+            .pauseFor(1500)
+            .deleteAll()
+            .start();
+
+        // Show more information on skill click
+        function showSkillInfo(skill) {
+            const infoElements = document.querySelectorAll('.skill-info p');
+            infoElements.forEach(el => el.style.display = 'none');
+            document.getElementById(skill + '-info').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
